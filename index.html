@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caneer Cake | كنير كيك</title>
+
+    <meta name="description"
+          content="اكتشفي عالم Caneer Cake، كيك وحلويات مصنوعة بحب لتجعل مناسباتك أجمل.">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- رأس الموقع -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                
+<img src="n.jpg" alt="شعار Caneer Cake" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 1px solid var(--rose);">
+                <span>
+                    Caneer Cake
+                    <small>WITH PASSION</small>
+                </span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#products">قائمة الكيك</a>
+                <a href="#story">قصتنا</a>
+                <a href="#gallery">معرض الصور</a>
+                <a href="#contact">تواصلي معنا</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-button" onclick="openCart()">
+                    🛍️ السلة
+                    <span id="cart-count">0</span>
+                </button>
+
+                <button class="admin-button" onclick="openAdmin()">
+                    الإدارة
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- الواجهة الرئيسية -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        ✨ نخبز السعادة بكل حب ✨
+                    </span>
+
+                    <h1>
+                        كل قطعة حكاية،
+                        <span>وكل مناسبة ذكرى</span>
+                    </h1>
+
+                    <p>
+                        اكتشفي عالمًا من الكيك والحلويات المصنوعة بعناية،
+                        حيث تلتقي النكهات اللذيذة بالتفاصيل الأنيقة،
+                        لتصبح لحظاتك الخاصة أكثر جمالًا.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#products" class="button primary-button">
+                            اكتشفي قائمة الكيك
+                        </a>
+
+                        <a href="#contact" class="button secondary-button">
+                            اطلبي كيكتك الخاصة
+                        </a>
+
+                    </div>
+
+                    <div class="hero-features">
+                        <span>♡ تفاصيل أنيقة</span>
+                        <span>♡ نكهات مميزة</span>
+                        <span>♡ مناسبات سعيدة</span>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="image-decoration"></div>
+
+<div class="hero-image">
+    <div class="image-decoration"></div>
+    
+    <!-- فيديو تزيين الكيك من مجلد videos -->
+    <video autoplay loop muted playsinline class="hero-video">
+        <source src="videos/Caneer_Cake.mp4" type="video/mp4">
+    </video>
+
+    <div class="floating-note">
+        <strong>Made with love ♡</strong>
+        <span>لأن لحظاتك تستحق الأفضل</span>
+    </div>
+</div>
+
+                    <div class="floating-note">
+                        <strong>Made with love ♡</strong>
+                        <span>لأن لحظاتك تستحق الأفضل</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- المنتجات -->
+        <section class="section products-section" id="products">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">اختاري حلاوتك</span>
+
+                    <h2>قائمة الكيك والحلويات</h2>
+
+                    <p>
+                        اكتشفي تشكيلتنا واختاري ما يناسب ذوقك ومناسبتك.
+                    </p>
+
+                </div>
+
+
+
+
+
+                <!-- ستظهر المنتجات هنا بواسطة JavaScript -->
+                <div class="products-grid" id="products-grid">
+
+                    <div class="loading-message">
+                        جارٍ تحميل المنتجات...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- قصتنا -->
+        <section class="section story-section" id="story">
+
+            <div class="container story-grid">
+
+                <div class="story-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1000&q=85"
+                        alt="كيك مصنوع بعناية"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="story-content">
+
+                    <span class="eyebrow">حكايتنا</span>
+
+                    <h2>
+                        لأن أجمل الذكريات
+                        تبدأ بتفصيلة حلوة
+                    </h2>
+
+                    <p>
+                        في Caneer Cake نؤمن أن الكيك ليس مجرد حلوى،
+                        بل جزء من لحظاتنا الجميلة مع العائلة والأصدقاء.
+                        لهذا نهتم بكل تفصيلة، من اختيار النكهة
+                        إلى اللمسة الأخيرة في التزيين.
+                    </p>
+
+                    <a href="#contact" class="button primary-button">
+                        تواصلي معنا
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- معرض الصور -->
+        <section class="section gallery-section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">من عالمنا</span>
+
+                    <h2>معرض الكيك</h2>
+
+                    <p>
+                        أفكار جميلة تلهمك لمناسبتك القادمة.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=80"
+                        alt="كيكة احتفالية"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                        alt="كيكة شوكولاتة"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+                        alt="كيكة بالفواكه"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"
+                        alt="حلوى بالكريمة"
+                        loading="lazy"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- التواصل -->
+        <section class="contact-section" id="contact">
+
+            <div class="container contact-box">
+
+                <div>
+                    <span class="eyebrow">مناسبتك القادمة تبدأ هنا</span>
+
+                    <h2>لديكِ فكرة لكيكة أحلامك؟</h2>
+
+                    <p>
+                        تواصلي معنا لمناقشة تفاصيل طلبك الخاص.
+                    </p>
+                </div>
+
+                <a
+                    href="https://instagram.com/caneercake"
+                    target="_blank"
+                    rel="noopener"
+                    class="button contact-button"
+                >
+                    زيارة حساب إنستغرام ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- التذييل -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>Caneer Cake</h3>
+                <p>حلاوة التفاصيل، ودفء اللحظات، وكيك يُصنع بكل حب.</p>
+            </div>
+
+            <div>
+                <h3>روابط سريعة</h3>
+                <a href="#home">الرئيسية</a>
+                <a href="#products">المنتجات</a>
+                <a href="#story">قصتنا</a>
+            </div>
+
+            <div>
+                <h3>تابعينا</h3>
+                <a href="https://instagram.com/caneercake"
+                   target="_blank"
+                   rel="noopener">
+                    Instagram
+                </a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © <span id="current-year"></span> Caneer Cake
+            — جميع الحقوق محفوظة.
+        </div>
+
+    </footer>
+
+
+    <!-- نافذة السلة -->
+    <div class="modal" id="cart-modal">
+
+        <div class="modal-content">
+
+            <button class="close-button"
+                    onclick="closeCart()"
+                    aria-label="إغلاق">
+                ×
+            </button>
+
+            <h2>سلة المشتريات 🛍️</h2>
+
+            <div id="cart-items">
+                سلتك فارغة حاليًا.
+            </div>
+
+            <div class="cart-total">
+                الإجمالي:
+                <strong id="cart-total">0</strong>
+            </div>
+
+            <button class="button primary-button"
+                    onclick="checkout()">
+                متابعة الطلب
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- نافذة دخول الإدارة -->
+    <div class="modal" id="admin-modal">
+
+        <div class="modal-content">
+
+            <button class="close-button"
+                    onclick="closeAdmin()"
+                    aria-label="إغلاق">
+                ×
+            </button>
+
+            <h2>لوحة الإدارة</h2>
+
+            <p>
+                سنضيف تسجيل دخول آمنًا عند ربط الموقع بقاعدة البيانات.
+            </p>
+
+            <div id="admin-content"></div>
+
+        </div>
+
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800, // مدة الحركة
+        once: true, // الحركة تحدث مرة واحدة عند النزول
+        offset: 100 // يبدأ الظهور قبل وصول الماوس للعنصر بقليل
+    });
+</script>
+</body>
+</html>
